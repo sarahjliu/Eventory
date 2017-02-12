@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.theopentutorials.android.R;
+
 public class MainActivity extends AppCompatActivity {
     Button rsvpButton;
     Button calendarButton;
@@ -25,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         {
             Intent intent = new Intent(MainActivity.this, list.class);
             startActivity(intent);
-            finish();
         }
         });
     }

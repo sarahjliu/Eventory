@@ -17,7 +17,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="<         ICE SKATING           "
+            android:text="&#60;         ICE SKATING           "
             android:textSize="30dp"
             android:textColor="#FFFFFF"
             android:background="#87CEFA"
