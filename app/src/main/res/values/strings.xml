@@ -1,3 +1,15 @@
-<resources>
-    <string name="app_name">CoShare</string>
-</resources>
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">CoShare</string>
+        <string name="title_activity_list">list</string>
+        <string-array name="events_array">
+            <item>Ice Skating</item>
+            <item>Tennis</item>
+            <item>FootBall</item>
+            <item>Basket Ball</item>
+            <item>Table Tennis</item>
+            <item>Chess</item>
+            <item>Hockey</item>
+        </string-array>
+    </resources>
+

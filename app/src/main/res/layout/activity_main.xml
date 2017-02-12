@@ -14,22 +14,64 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
         tools:context="com.example.admin.mypearlprofile.MainActivity">
-    <TextView
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="<         ICE SKATING           "
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#87CEFA"
+            android:id="@+id/back_button" />
+        <!--<android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#87CEFA"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>-->
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ICE SKATING"
         android:layout_margin="5dp"
         android:id="@+id/event_name"
         android:textSize="40sp"
-        android:layout_gravity="center_horizontal"/>
-    <ImageView
+-->    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ice_skate"
         android:id="@+id/imageView2"
+        android:layout_margin="5dp"
         android:adjustViewBounds="true"/>
-    <Button
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="RSVP"
+            android:background="#87CEFA"
+            android:layout_margin="5dp"
+            android:id="@+id/rsvp_button"
+            android:onClick="writeDatabase"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add to Calendar"
+            android:background="#87CEFA"
+            android:layout_margin="5dp"
+            android:id="@+id/calendar_button"
+            android:onClick="writeDatabase"/>-->
+
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:text="RSVP"
         android:background="#87CEFA"
@@ -37,13 +79,14 @@
         android:id="@+id/rsvp_button"
         android:onClick="writeDatabase"/>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:text="Add to Calendar"
         android:background="#87CEFA"
         android:layout_margin="5dp"
         android:id="@+id/calendar_button"
         android:onClick="writeDatabase"/>
+</LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +97,7 @@
         android:id="@+id/event_when"
         android:drawableLeft="@drawable/ic_access_time_black_24dp"/>
 
-        <TextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=" Peabody 211"
@@ -63,6 +106,16 @@
         android:textColor="#000000"
         android:drawableLeft="@drawable/ic_place_black_24dp"
         android:id="@+id/event_where"/>
+    <!--
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="  Free Food"
+        android:id="@+id/event_food"
+        android:drawableLeft="@drawable/ic_local_dining_black_24dp"/>-->
         <View
             android:layout_width="fill_parent"
             android:layout_height="2dip"
@@ -75,5 +128,6 @@
         android:textSize="15sp"
         android:textColor="#000000"
         android:id="@+id/event_description"/>
+
 </LinearLayout>
 </ScrollView>
