@@ -17,9 +17,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ice Skating"
+        android:text="ICE SKATING"
+        android:layout_margin="5dp"
         android:id="@+id/event_name"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:layout_gravity="center_horizontal"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -31,12 +32,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RSVP"
+        android:background="#87CEFA"
+        android:layout_margin="5dp"
         android:id="@+id/rsvp_button"
         android:onClick="writeDatabase"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add to Calendar"
+        android:background="#87CEFA"
+        android:layout_margin="5dp"
         android:id="@+id/calendar_button"
         android:onClick="writeDatabase"/>
     <TextView
@@ -45,34 +50,27 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:textColor="#000000"
-        android:text="Sunday, February 12 at 1PM - 3PM EST"
-        android:id="@+id/event_when"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ice_skate"
-            android:id="@+id/imageView" />
+        android:text="  Sunday, February 12 at 1PM - 3PM EST"
+        android:id="@+id/event_when"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"/>
 
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Peabody 211"
+        android:text=" Peabody 211"
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:textColor="#000000"
+        android:drawableLeft="@drawable/ic_place_black_24dp"
         android:id="@+id/event_where"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ice_skate"
-            android:id="@+id/imageView3" />
-
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#87CEFA" />
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Come ice skate together with Pearl Hacks! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        android:text="Come ice skate together with Pearl Hacks! Lorem ipsum dolor sit amet, consectetur adipiscing elit laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:textColor="#000000"
